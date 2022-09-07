@@ -322,6 +322,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 571433089, guid: 936737125ef824741a8973803d150eee, type: 3}
+      propertyPath: gravity
+      value: -9.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 571433089, guid: 936737125ef824741a8973803d150eee, type: 3}
+      propertyPath: jumpHeight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 571433090, guid: 936737125ef824741a8973803d150eee, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 69387e9e0a36b944ca01dbe5c46a0c00, type: 3}
+    - target: {fileID: 571433090, guid: 936737125ef824741a8973803d150eee, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1799479719715525210, guid: 936737125ef824741a8973803d150eee, type: 3}
       propertyPath: m_Name
       value: Player
