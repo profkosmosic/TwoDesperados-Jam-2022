@@ -6,6 +6,7 @@ using TMPro;
 public class Health : MonoBehaviour
 {
     [SerializeField]int health = 100;
+    [SerializeField]AudioSource hitSound;
     [SerializeField]TextMeshProUGUI healthUI;
 
     void Update() {
@@ -19,5 +20,6 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(int damage) {
         health -= damage;
+        hitSound.Play();
     }
 }
