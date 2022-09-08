@@ -112,7 +112,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSpeed: 25
-  bulletTime: 2
+  bulletTime: 1
+  damage: 25
 --- !u!96 &-1238577081947593458
 TrailRenderer:
   serializedVersion: 2

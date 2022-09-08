@@ -16,4 +16,8 @@ public class Health : MonoBehaviour
             Debug.Log("You're dead!");
         }
     }
+
+    public void TakeDamage(int damage) {
+        health -= damage;
+    }
 }

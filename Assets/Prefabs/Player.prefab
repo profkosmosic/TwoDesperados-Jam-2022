@@ -18152,7 +18152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   swayAmount: 0.1
   maxSwayAmount: 0.2
-  smoothAmount: 10
+  smoothAmount: 5
 --- !u!1 &8783296056049297128
 GameObject:
   m_ObjectHideFlags: 0
