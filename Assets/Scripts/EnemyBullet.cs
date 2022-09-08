@@ -23,5 +23,8 @@ public class EnemyBullet : MonoBehaviour
             Destroy(gameObject);
             player.TakeDamage(damage);
         }
+        if(other.tag == "Obstacle") {
+            Destroy(gameObject);
+        }
     }
 }

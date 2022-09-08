@@ -19,5 +19,8 @@ public class PlayerBullet : MonoBehaviour
             Enemy enemy = other.transform.GetComponent<Enemy>();
             enemy.TakeDamage(damage);
         }
+        if(other.tag == "Obstacle") {
+            Destroy(gameObject);
+        }
     }
 }
