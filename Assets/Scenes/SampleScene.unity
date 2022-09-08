@@ -485,25 +485,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1275976896 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1799479719715525210, guid: 936737125ef824741a8973803d150eee, type: 3}
-  m_PrefabInstance: {fileID: 1799479719144895012}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1275976901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1275976896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2e5788f4fe174d4e8b3fc7224ebf160, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  healthUI: {fileID: 1519097589}
 --- !u!1 &1519097587
 GameObject:
   m_ObjectHideFlags: 0
@@ -779,6 +760,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1275976901, guid: 936737125ef824741a8973803d150eee, type: 3}
+      propertyPath: healthUI
+      value: 
+      objectReference: {fileID: 1519097589}
     - target: {fileID: 1799479719715525210, guid: 936737125ef824741a8973803d150eee, type: 3}
       propertyPath: m_Name
       value: Player
