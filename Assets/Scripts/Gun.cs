@@ -33,6 +33,10 @@ public class Gun : MonoBehaviour
             StartCoroutine(Reload());
         }
 
+        if(Input.GetButton("Fire1") && Time.time >= nextTimeToFire && currentAmmo == 0 && !isReloading) {
+            StartCoroutine(Reload());
+        }
+
         if(Input.GetButton("Fire1") && Time.time >= nextTimeToFire && currentAmmo > 0 && !isReloading) {
             nextTimeToFire = Time.time + 1f/fireRate;
             Shoot();
