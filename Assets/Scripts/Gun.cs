@@ -12,6 +12,7 @@ public class Gun : MonoBehaviour
     [SerializeField]TextMeshProUGUI ammoUI;
     int currentAmmo;
     float nextTimeToFire = 0f;
+    bool isReloading = false;
     AudioSource gunshot;
 
     void Start()
@@ -23,14 +24,14 @@ public class Gun : MonoBehaviour
     void Update()
     {
         if(ammoUI != null) {
-            ammoUI.text = currentAmmo + " 9MM".ToString();
+            ammoUI.text = currentAmmo + "-" + maxAmmo.ToString();
         }
 
-        if(Input.GetKeyDown(KeyCode.R)) {
+        if(Input.GetKeyDown(KeyCode.R) && !isReloading) {
             StartCoroutine(Reload());
         }
 
-        if(Input.GetButton("Fire1") && Time.time >= nextTimeToFire && currentAmmo > 0) {
+        if(Input.GetButton("Fire1") && Time.time >= nextTimeToFire && currentAmmo > 0 && !isReloading) {
             nextTimeToFire = Time.time + 1f/fireRate;
             Shoot();
         }
@@ -44,7 +45,9 @@ public class Gun : MonoBehaviour
     }
 
     IEnumerator Reload() {
+        isReloading = true;
         yield return new WaitForSeconds(1f);
         currentAmmo = maxAmmo;
+        isReloading = false;
     }
 }
