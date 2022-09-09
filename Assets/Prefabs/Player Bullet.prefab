@@ -213,3 +213,4 @@ MonoBehaviour:
   bulletSpeed: 35
   bulletTime: 1
   damage: 25
+  impactObstacle: {fileID: 100002, guid: f04e15e9b0b32f24b9e87868e8bfbeea, type: 3}
