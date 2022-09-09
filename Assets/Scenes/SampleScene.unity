@@ -123,6 +123,31 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!82 &460491370 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 340095883, guid: 936737125ef824741a8973803d150eee, type: 3}
+  m_PrefabInstance: {fileID: 1799479719144895012}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &479981178 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1799479719715525210, guid: 936737125ef824741a8973803d150eee, type: 3}
+  m_PrefabInstance: {fileID: 1799479719144895012}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &479981184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479981178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2bd028f8d20aca4e8f80abe34c14e50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: {fileID: 1846811693}
+  gunshot: {fileID: 460491370}
+  damage: {fileID: 1098225495}
 --- !u!1 &563771001
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,6 +526,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 0.2, z: 10}
   m_Center: {x: 0, y: -0.1, z: 0}
+--- !u!82 &1098225495 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1167773827, guid: 936737125ef824741a8973803d150eee, type: 3}
+  m_PrefabInstance: {fileID: 1799479719144895012}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1519097587
 GameObject:
   m_ObjectHideFlags: 0
