@@ -2827,7 +2827,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: prof - lazar  petrovic
+  m_text: proflm - lazar  petrovic
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d40121d43ca41c848b42fa39ba39e3a4, type: 2}
   m_sharedMaterial: {fileID: 6892911162711740580, guid: d40121d43ca41c848b42fa39ba39e3a4, type: 2}
