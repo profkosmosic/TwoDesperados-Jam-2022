@@ -8,6 +8,8 @@ public class BulletTime : MonoBehaviour
     [SerializeField]PostProcessVolume volume;
     [SerializeField]AudioSource gunshot;
     [SerializeField]AudioSource damage;
+    [SerializeField]AudioSource slowmoIn;
+    [SerializeField]AudioSource slowmoOut;
     bool isSlow = false;
     Grain g;
     Bloom b;
@@ -15,6 +17,7 @@ public class BulletTime : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.LeftShift) && !isSlow) {
+            slowmoIn.Play();
             Time.timeScale = 0.3f;
             gunshot.pitch = 0.5f;
             damage.pitch = 0.5f;
@@ -26,6 +29,7 @@ public class BulletTime : MonoBehaviour
 
         }
         else if(Input.GetKeyDown(KeyCode.LeftShift) && isSlow) {
+            slowmoOut.Play();
             Time.timeScale = 1f;
             gunshot.pitch = 1f;
             damage.pitch = 1f;
