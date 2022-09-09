@@ -4306,29 +4306,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 468030848}
     m_Modifications:
-    - target: {fileID: 2024524844, guid: 4857e74d988a4ea44b66d1876fd2e985, type: 3}
-      propertyPath: m_Intensity
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 2024524844, guid: 4857e74d988a4ea44b66d1876fd2e985, type: 3}
-      propertyPath: m_SpotAngle
-      value: 75
-      objectReference: {fileID: 0}
     - target: {fileID: 2695231849087729172, guid: 4857e74d988a4ea44b66d1876fd2e985, type: 3}
       propertyPath: m_RootOrder
       value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2695231849087729172, guid: 4857e74d988a4ea44b66d1876fd2e985, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 2695231849087729172, guid: 4857e74d988a4ea44b66d1876fd2e985, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 2695231849087729172, guid: 4857e74d988a4ea44b66d1876fd2e985, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 2695231849087729172, guid: 4857e74d988a4ea44b66d1876fd2e985, type: 3}
       propertyPath: m_LocalPosition.x
