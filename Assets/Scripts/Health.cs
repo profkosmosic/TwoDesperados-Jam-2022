@@ -8,6 +8,7 @@ public class Health : MonoBehaviour
     [SerializeField]int health = 100;
     [SerializeField]AudioSource hitSound;
     [SerializeField]TextMeshProUGUI healthUI;
+    [SerializeField]ParticleSystem blood;
 
     void Update() {
         if(healthUI != null) {
@@ -21,5 +22,6 @@ public class Health : MonoBehaviour
     public void TakeDamage(int damage) {
         health -= damage;
         hitSound.Play();
+        blood.Play();
     }
 }

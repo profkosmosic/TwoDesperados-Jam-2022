@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField]int health = 50;
+    [SerializeField]ParticleSystem blood;
 
     void Update() {
         if(health <= 0) {
@@ -14,5 +15,6 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(int damage) {
         health -= damage;
+        blood.Play();
     }
 }
