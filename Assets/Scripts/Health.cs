@@ -12,7 +12,7 @@ public class Health : MonoBehaviour
 
     void Update() {
         if(healthUI != null) {
-            healthUI.text = health + " HP".ToString();
+            healthUI.text = health.ToString();
         }
         if(health <= 0) {
             Debug.Log("You're dead!");

@@ -25,7 +25,7 @@ public class Gun : MonoBehaviour
     void Update()
     {
         if(ammoUI != null) {
-            ammoUI.text = currentAmmo + "-" + maxAmmo.ToString();
+            ammoUI.text = currentAmmo.ToString();
         }
 
         if(Input.GetKeyDown(KeyCode.R) && !isReloading) {
