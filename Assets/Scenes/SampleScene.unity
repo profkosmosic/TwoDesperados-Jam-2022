@@ -784,10 +784,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 173284682, guid: 7f252bb9fd686544ab43650d4867a1ff, type: 3}
-      propertyPath: health
-      value: 150
-      objectReference: {fileID: 0}
     - target: {fileID: 1415091659704766165, guid: 7f252bb9fd686544ab43650d4867a1ff, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -845,34 +841,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 318038015, guid: 936737125ef824741a8973803d150eee, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 340095883, guid: 936737125ef824741a8973803d150eee, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 24300002, guid: fc9456527ad4a664db7c7520f6cd469d, type: 2}
-    - target: {fileID: 479981184, guid: 936737125ef824741a8973803d150eee, type: 3}
-      propertyPath: mixer
-      value: 
-      objectReference: {fileID: 24100000, guid: fc9456527ad4a664db7c7520f6cd469d, type: 2}
     - target: {fileID: 479981184, guid: 936737125ef824741a8973803d150eee, type: 3}
       propertyPath: volume
       value: 
       objectReference: {fileID: 1846811693}
-    - target: {fileID: 514304054, guid: 936737125ef824741a8973803d150eee, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 571433090, guid: 936737125ef824741a8973803d150eee, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 24300002, guid: fc9456527ad4a664db7c7520f6cd469d, type: 2}
-    - target: {fileID: 1167773827, guid: 936737125ef824741a8973803d150eee, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 24300002, guid: fc9456527ad4a664db7c7520f6cd469d, type: 2}
     - target: {fileID: 1275976901, guid: 936737125ef824741a8973803d150eee, type: 3}
       propertyPath: healthUI
       value: 

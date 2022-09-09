@@ -236,7 +236,7 @@ AudioSource:
   m_GameObject: {fileID: 340095878}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: fc9456527ad4a664db7c7520f6cd469d, type: 2}
   m_audioClip: {fileID: 8300000, guid: 8d3dd7ff8578c0646a94c5fb5a50a41d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.6
@@ -1293,7 +1293,7 @@ AudioSource:
   m_GameObject: {fileID: 1799479719715525210}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: fc9456527ad4a664db7c7520f6cd469d, type: 2}
   m_audioClip: {fileID: 8300000, guid: 69387e9e0a36b944ca01dbe5c46a0c00, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -1409,8 +1409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volume: {fileID: 0}
-  gunshot: {fileID: 340095883}
-  damage: {fileID: 1167773827}
+  mixer: {fileID: 24100000, guid: fc9456527ad4a664db7c7520f6cd469d, type: 2}
   slowmoIn: {fileID: 514304054}
   slowmoOut: {fileID: 318038015}
 --- !u!1 &1799479720103878485
@@ -1526,7 +1525,7 @@ AudioSource:
   m_GameObject: {fileID: 1799479720103878485}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: fc9456527ad4a664db7c7520f6cd469d, type: 2}
   m_audioClip: {fileID: 8300000, guid: ec9bd0d45eeefbb4a82bf93625fb663a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.8
