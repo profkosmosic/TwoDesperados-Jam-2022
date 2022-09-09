@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Gun : MonoBehaviour
 {
@@ -8,7 +9,8 @@ public class Gun : MonoBehaviour
     [SerializeField]ParticleSystem muzzleFlash;
     [SerializeField]float fireRate = 12f;
     [SerializeField]int maxAmmo = 12;
-    [SerializeField]int currentAmmo;
+    [SerializeField]TextMeshProUGUI ammoUI;
+    int currentAmmo;
     float nextTimeToFire = 0f;
     AudioSource gunshot;
 
@@ -20,6 +22,10 @@ public class Gun : MonoBehaviour
 
     void Update()
     {
+        if(ammoUI != null) {
+            ammoUI.text = currentAmmo + " 9MM".ToString();
+        }
+
         if(Input.GetKeyDown(KeyCode.R)) {
             StartCoroutine(Reload());
         }
