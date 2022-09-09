@@ -227,10 +227,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 2874370479028561159, guid: 1c694bf97abf2114bb86d5f7c5d0f307, type: 3}
   muzzleFlash: {fileID: 3137692525739537016}
-  fireRate: 1.5
+  fireRate: 2
   maxAmmo: 12
   ammoUI: {fileID: 0}
   reloadSound: {fileID: 827446635}
+  anim: {fileID: 146694368}
 --- !u!82 &340095883
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18682,6 +18683,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3613075267275471578}
   - component: {fileID: 1045579304}
+  - component: {fileID: 146694368}
   m_Layer: 0
   m_Name: hands
   m_TagString: Untagged
@@ -18722,6 +18724,26 @@ MonoBehaviour:
   swayAmount: 0.1
   maxSwayAmount: 0.2
   smoothAmount: 5
+--- !u!95 &146694368
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8525057417001751477}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 87a20384cb39ee046a73d97c62219808, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8783296056049297128
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ public class Gun : MonoBehaviour
     [SerializeField]int maxAmmo = 12;
     [SerializeField]TextMeshProUGUI ammoUI;
     [SerializeField]AudioSource reloadSound;
+    [SerializeField]Animator anim;
     int currentAmmo;
     float nextTimeToFire = 0f;
     bool isReloading = false;
@@ -47,8 +48,10 @@ public class Gun : MonoBehaviour
 
     IEnumerator Reload() {
         isReloading = true;
+        anim.SetBool("Reload", true);
         reloadSound.Play();
         yield return new WaitForSeconds(1f);
+        anim.SetBool("Reload", false);
         currentAmmo = maxAmmo;
         isReloading = false;
     }
