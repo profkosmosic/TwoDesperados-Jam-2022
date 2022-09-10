@@ -11,6 +11,8 @@ public class EnemyAI : MonoBehaviour
     [SerializeField]ParticleSystem muzzleFlash;
     [SerializeField]AudioSource gunshot;
     [SerializeField]float fireRate = 2f;
+    [SerializeField]GameObject bullet;
+    [SerializeField]Transform shooter;
     float nextTimeToFire = 0f;
     Animator anim;
     NavMeshAgent agent;
@@ -57,6 +59,7 @@ public class EnemyAI : MonoBehaviour
             anim.SetBool("Attack", true);
             muzzleFlash.Play();
             gunshot.Play();
+            GameObject shot = Instantiate(bullet, shooter.position, shooter.rotation);
         }
     }
 

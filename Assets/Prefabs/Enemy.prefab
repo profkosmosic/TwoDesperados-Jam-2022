@@ -1242,6 +1242,8 @@ MonoBehaviour:
   muzzleFlash: {fileID: 3107345072013983089}
   gunshot: {fileID: 1635472154}
   fireRate: 1
+  bullet: {fileID: 2874370479028561159, guid: 0b4788f3868cd2f49ae7ae272cf2d364, type: 3}
+  shooter: {fileID: 1635472151}
 --- !u!1 &1415091659704996599
 GameObject:
   m_ObjectHideFlags: 0
