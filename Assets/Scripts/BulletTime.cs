@@ -10,6 +10,7 @@ public class BulletTime : MonoBehaviour
     [SerializeField]AudioMixer mixer;
     [SerializeField]AudioSource slowmoIn;
     [SerializeField]AudioSource slowmoOut;
+    [SerializeField]AudioSource heartbeat;
     bool isSlow = false;
     Grain g;
     Bloom b;
@@ -27,6 +28,7 @@ public class BulletTime : MonoBehaviour
     void SlowMotionOn() {
         slowmoIn.Play();
         slowmoOut.Stop();
+        heartbeat.Play();
         Time.timeScale = 0.3f;
         mixer.SetFloat("pitch", 0.5f);
         isSlow = true;
@@ -39,6 +41,7 @@ public class BulletTime : MonoBehaviour
     void SlowMotionOff() {
         slowmoOut.Play();
         slowmoIn.Stop();
+        heartbeat.Stop();
         Time.timeScale = 1f;
         mixer.SetFloat("pitch", 1f);
         isSlow = false;
