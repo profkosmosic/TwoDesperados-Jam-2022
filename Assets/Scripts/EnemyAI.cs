@@ -8,6 +8,10 @@ public class EnemyAI : MonoBehaviour
     [SerializeField]Transform target;
     [SerializeField]float range = 10f;
     [SerializeField]float turnSpeed = 10f;
+    [SerializeField]ParticleSystem muzzleFlash;
+    [SerializeField]AudioSource gunshot;
+    [SerializeField]float fireRate = 2f;
+    float nextTimeToFire = 0f;
     Animator anim;
     NavMeshAgent agent;
     bool isProvoked = false;
@@ -48,7 +52,12 @@ public class EnemyAI : MonoBehaviour
     }
 
     void AttackTarget() {
-        anim.SetBool("Attack", true);
+        if(Time.time >= nextTimeToFire) {
+            nextTimeToFire = Time.time + 1f/fireRate;
+            anim.SetBool("Attack", true);
+            muzzleFlash.Play();
+            gunshot.Play();
+        }
     }
 
     void FaceTarget() {
