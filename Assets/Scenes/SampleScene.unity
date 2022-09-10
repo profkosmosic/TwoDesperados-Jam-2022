@@ -597,6 +597,10 @@ PrefabInstance:
       propertyPath: ammoUI
       value: 
       objectReference: {fileID: 1620663022}
+    - target: {fileID: 340095880, guid: 936737125ef824741a8973803d150eee, type: 3}
+      propertyPath: fireRate
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 479981184, guid: 936737125ef824741a8973803d150eee, type: 3}
       propertyPath: volume
       value: 
