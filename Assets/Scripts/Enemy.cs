@@ -8,6 +8,12 @@ public class Enemy : MonoBehaviour
     [SerializeField]ParticleSystem blood;
     [SerializeField]Animator anim;
     bool isDead = false;
+    int deathAnim;
+
+    void Start() {
+        System.Random random = new System.Random ();
+		deathAnim = random.Next (1, 4);
+    }
 
     void Update() {
         if(health <= 0 && !isDead) {
@@ -21,7 +27,9 @@ public class Enemy : MonoBehaviour
     }
 
     void Die() {
-        anim.SetTrigger("Death");
+        if(deathAnim == 1) anim.SetTrigger("Death1");
+        else if(deathAnim == 2) anim.SetTrigger("Death2");
+        else anim.SetTrigger("Death3");
         (gameObject.GetComponent("EnemyAI") as MonoBehaviour).enabled = false;
         this.GetComponent<BoxCollider>().enabled = false;
         isDead = true;
