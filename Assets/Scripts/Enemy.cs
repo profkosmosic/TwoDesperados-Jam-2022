@@ -22,6 +22,7 @@ public class Enemy : MonoBehaviour
 
     void Die() {
         anim.SetTrigger("Death");
+        (gameObject.GetComponent("EnemyAI") as MonoBehaviour).enabled = false;
         this.GetComponent<BoxCollider>().enabled = false;
         isDead = true;
     }

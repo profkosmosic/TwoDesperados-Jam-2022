@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: e70e8f908074eed46a8e805a0fdafe7e, type: 2}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,7 +303,7 @@ GameObject:
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!23 &1091098467
 MeshRenderer:
@@ -432,6 +432,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1953885785 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1799479719715525211, guid: 936737125ef824741a8973803d150eee, type: 3}
+  m_PrefabInstance: {fileID: 1799479719144895012}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &917387446855388793
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -536,13 +541,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1613479952, guid: 7f252bb9fd686544ab43650d4867a1ff, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1953885785}
     - target: {fileID: 1415091659704766165, guid: 7f252bb9fd686544ab43650d4867a1ff, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1415091659704766165, guid: 7f252bb9fd686544ab43650d4867a1ff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.129882
+      value: -10.165
       objectReference: {fileID: 0}
     - target: {fileID: 1415091659704766165, guid: 7f252bb9fd686544ab43650d4867a1ff, type: 3}
       propertyPath: m_LocalPosition.y
