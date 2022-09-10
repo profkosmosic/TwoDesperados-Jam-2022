@@ -542,17 +542,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1613479952, guid: 7f252bb9fd686544ab43650d4867a1ff, type: 3}
-      propertyPath: range
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1613479952, guid: 7f252bb9fd686544ab43650d4867a1ff, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 1953885785}
-    - target: {fileID: 1613479952, guid: 7f252bb9fd686544ab43650d4867a1ff, type: 3}
-      propertyPath: turnSpeed
-      value: 15
-      objectReference: {fileID: 0}
     - target: {fileID: 1415091659704766165, guid: 7f252bb9fd686544ab43650d4867a1ff, type: 3}
       propertyPath: m_RootOrder
       value: 1
