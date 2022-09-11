@@ -17,7 +17,9 @@ public class PlayerBullet : MonoBehaviour
         if(other.tag == "Enemy") {
             Destroy(gameObject);
             Enemy enemy = other.transform.GetComponent<Enemy>();
+            EnemyAI enemyAI = other.transform.GetComponent<EnemyAI>();
             enemy.TakeDamage(damage);
+            enemyAI.isProvoked = true;
         }
         if(other.tag == "Obstacle") {
             Destroy(gameObject);

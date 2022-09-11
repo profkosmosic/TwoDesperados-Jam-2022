@@ -16,7 +16,7 @@ public class EnemyAI : MonoBehaviour
     float nextTimeToFire = 0f;
     Animator anim;
     NavMeshAgent agent;
-    bool isProvoked = false;
+    public bool isProvoked = false;
     float distanceToTarget = Mathf.Infinity;
 
     void Start() {
