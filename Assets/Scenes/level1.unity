@@ -5827,6 +5827,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5409708250048990400, guid: 5595fd4e58f8efa4184881891323641e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5409708250048990400, guid: 5595fd4e58f8efa4184881891323641e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 7060052280179565262, guid: 5595fd4e58f8efa4184881891323641e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8743661875865117760, guid: 5595fd4e58f8efa4184881891323641e, type: 3}
+      propertyPath: m_text
+      value: 'YOU DIED
+
+        PRESS R TO RESTART'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5595fd4e58f8efa4184881891323641e, type: 3}
 --- !u!1 &917387446855388794 stripped
@@ -5992,6 +6010,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 936737125ef824741a8973803d150eee, type: 3}
+--- !u!1 &1799479719144895013 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1799479719715525210, guid: 936737125ef824741a8973803d150eee, type: 3}
+  m_PrefabInstance: {fileID: 1799479719144895012}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1799479719144895014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799479719144895013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d50f4c01bd8f8ea43b31afb1fb4fb3d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2460956749015758254
 PrefabInstance:
   m_ObjectHideFlags: 0

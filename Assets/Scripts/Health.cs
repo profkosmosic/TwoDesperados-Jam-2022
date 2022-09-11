@@ -42,10 +42,5 @@ public class Health : MonoBehaviour
             Time.timeScale = 1f;
             SceneManager.LoadScene(Application.loadedLevel);
         }
-        if(Input.GetKeyDown(KeyCode.Escape)) {
-            Time.timeScale = 1f;
-            Cursor.lockState = CursorLockMode.None;
-            SceneManager.LoadScene("MainMenu");
-        }
     }
 }
