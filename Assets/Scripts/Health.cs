@@ -2,12 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
     [SerializeField]int health = 100;
     [SerializeField]AudioSource hitSound;
     [SerializeField]TextMeshProUGUI healthUI;
+    [SerializeField]GameObject deathUI;
+    [SerializeField]GameObject gun;
+    [SerializeField]GameObject shooter;
+    [SerializeField]GameObject crosshair;
     [SerializeField]ParticleSystem blood;
 
     void Update() {
@@ -15,7 +20,7 @@ public class Health : MonoBehaviour
             healthUI.text = health.ToString();
         }
         if(health <= 0) {
-            Debug.Log("You're dead!");
+            Die();
         }
     }
 
@@ -23,5 +28,24 @@ public class Health : MonoBehaviour
         health -= damage;
         hitSound.Play();
         blood.Play();
+    }
+
+    void Die() {
+        Time.timeScale = 0f;
+        deathUI.SetActive(true);
+        gun.SetActive(false);
+        shooter.SetActive(false);
+        crosshair.SetActive(false);
+        (GameObject.FindWithTag("Player").GetComponent("Movement") as MonoBehaviour).enabled = false;
+        (GameObject.FindWithTag("Player").GetComponent("BulletTime") as MonoBehaviour).enabled = false;
+        if(Input.GetKeyDown(KeyCode.R)) {
+            Time.timeScale = 1f;
+            SceneManager.LoadScene(Application.loadedLevel);
+        }
+        if(Input.GetKeyDown(KeyCode.Escape)) {
+            Time.timeScale = 1f;
+            Cursor.lockState = CursorLockMode.None;
+            SceneManager.LoadScene("MainMenu");
+        }
     }
 }
