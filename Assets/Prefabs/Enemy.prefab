@@ -1217,7 +1217,7 @@ NavMeshAgent:
   m_Acceleration: 10
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 6
+  m_StoppingDistance: 8
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -1238,8 +1238,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  range: 9
-  turnSpeed: 15
+  range: 12
+  turnSpeed: 25
   muzzleFlash: {fileID: 3107345072013983089}
   gunshot: {fileID: 1635472154}
   fireRate: 1
