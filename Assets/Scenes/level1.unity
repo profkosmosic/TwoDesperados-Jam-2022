@@ -503,7 +503,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5101129203786756070, guid: 5e7f363337a12a2448debcb373b14b00, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000030517578
+      value: 0.000061035156
       objectReference: {fileID: 0}
     - target: {fileID: 5101129203786756070, guid: 5e7f363337a12a2448debcb373b14b00, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8423,7 +8423,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 571433089, guid: 936737125ef824741a8973803d150eee, type: 3}
       propertyPath: jumpHeight
-      value: 1.75
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 1275976901, guid: 936737125ef824741a8973803d150eee, type: 3}
       propertyPath: gun

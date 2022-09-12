@@ -40,7 +40,7 @@ public class Health : MonoBehaviour
         (GameObject.FindWithTag("Player").GetComponent("BulletTime") as MonoBehaviour).enabled = false;
         if(Input.GetKeyDown(KeyCode.R)) {
             Time.timeScale = 1f;
-            SceneManager.LoadScene(Application.loadedLevel);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }

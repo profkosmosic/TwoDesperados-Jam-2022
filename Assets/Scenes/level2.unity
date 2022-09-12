@@ -7398,7 +7398,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 571433089, guid: 936737125ef824741a8973803d150eee, type: 3}
       propertyPath: jumpHeight
-      value: 1.75
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 1275976901, guid: 936737125ef824741a8973803d150eee, type: 3}
       propertyPath: gun
