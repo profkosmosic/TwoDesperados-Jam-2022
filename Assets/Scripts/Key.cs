@@ -11,7 +11,7 @@ public class Key : MonoBehaviour
     void OnTriggerStay(Collider other) {
         if(other.tag == "Player") {
             interactUI.SetActive(true);
-            if(Input.GetKeyDown(KeyCode.E)) {
+            if(Input.GetKey(KeyCode.E)) {
                 block.SetActive(false);
                 notification.SetActive(false);
                 interactUI.SetActive(false);

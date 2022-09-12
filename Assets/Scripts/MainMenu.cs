@@ -10,9 +10,11 @@ public class MainMenu : MonoBehaviour
     [SerializeField]GameObject quitButton;
     [SerializeField]GameObject controlScreen;
     [SerializeField]GameObject backToMenuButton;
+    [SerializeField]GameObject fadeOut;
+    [SerializeField]GameObject loading;
 
     public void PlayGame() {
-        SceneManager.LoadScene("level1");
+        StartCoroutine(StartLevel());
     }
 
     public void Controls() {
@@ -33,5 +35,12 @@ public class MainMenu : MonoBehaviour
 
     public void QuitGame() {
         Application.Quit();
+    }
+
+    IEnumerator StartLevel() {
+        fadeOut.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        loading.SetActive(true);
+        SceneManager.LoadScene("level1");
     }
 }

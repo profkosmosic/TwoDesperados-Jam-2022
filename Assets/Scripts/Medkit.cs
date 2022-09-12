@@ -11,7 +11,7 @@ public class Medkit : MonoBehaviour
     void OnTriggerStay(Collider other) {
         if(other.tag == "Player") {
             interactUI.SetActive(true);
-            if(Input.GetKeyDown(KeyCode.E)) {
+            if(Input.GetKey(KeyCode.E)) {
                 player.health += amount;
                 interactUI.SetActive(false);
                 Destroy(gameObject);
