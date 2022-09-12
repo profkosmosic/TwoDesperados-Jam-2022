@@ -7,12 +7,14 @@ public class Medkit : MonoBehaviour
     [SerializeField]Health player;
     [SerializeField]int amount = 25;
     [SerializeField]GameObject interactUI;
+    [SerializeField]AudioSource interactSound;
 
     void OnTriggerStay(Collider other) {
         if(other.tag == "Player") {
             interactUI.SetActive(true);
             if(Input.GetKey(KeyCode.E)) {
                 player.health += amount;
+                interactSound.Play();
                 interactUI.SetActive(false);
                 Destroy(gameObject);
             }
