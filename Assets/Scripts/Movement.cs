@@ -27,7 +27,7 @@ public class Movement : MonoBehaviour
         if(isGrounded && velocity.y < 0) {
             velocity.y = -2f;
             if(isGrounded && !footStep.isPlaying) {
-                footStep.volume = Random.Range(0.3f, 0.4f);
+                footStep.volume = Random.Range(0.4f, 0.5f);
                 footStep.pitch = Random.Range(0.8f, 1f);
                 footStep.Play();
             }
