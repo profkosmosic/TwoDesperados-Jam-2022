@@ -38,6 +38,9 @@ public class MainMenu : MonoBehaviour
     }
 
     IEnumerator StartLevel() {
+        if(MusicPlay.Music.gameObject != null) {
+            MusicPlay.Music.gameObject.GetComponent<AudioSource>().Play();
+        }
         fadeOut.SetActive(true);
         yield return new WaitForSeconds(1f);
         loading.SetActive(true);
