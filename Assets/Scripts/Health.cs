@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField]int health = 100;
+    public int health = 100;
     [SerializeField]AudioSource hitSound;
     [SerializeField]TextMeshProUGUI healthUI;
     [SerializeField]GameObject deathUI;
