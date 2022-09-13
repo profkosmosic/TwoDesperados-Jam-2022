@@ -7,4 +7,5 @@ The game jam theme is "Time does not exist".
 - Left Click to shoot
 - Space to jump
 - R to reload
+- E to interact
 - Left Shift to slow down time
