@@ -4968,6 +4968,7 @@ MonoBehaviour:
   backToMenuButton: {fileID: 388935073}
   fadeOut: {fileID: 997205995}
   loading: {fileID: 473310515}
+  mixer: {fileID: 24100000, guid: fc9456527ad4a664db7c7520f6cd469d, type: 2}
 --- !u!82 &1079064226
 AudioSource:
   m_ObjectHideFlags: 0

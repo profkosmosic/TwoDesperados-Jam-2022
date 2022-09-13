@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 6149666294301770065}
   - component: {fileID: 6149666294304637303}
   - component: {fileID: 6149666294303671223}
+  - component: {fileID: 4409200985921915687}
   m_Layer: 0
   m_Name: Camera_Shape
   m_TagString: Untagged
@@ -166,6 +167,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4409200985921915687
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6149666294301678961}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.34800914, y: 0.15901442, z: 0.115368865}
+  m_Center: {x: 0.011546438, y: 0.07284199, z: 0.0000000015172201}
 --- !u!1 &6149666294301678965
 GameObject:
   m_ObjectHideFlags: 0

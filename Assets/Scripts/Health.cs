@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class Health : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class Health : MonoBehaviour
     [SerializeField]GameObject shooter;
     [SerializeField]GameObject crosshair;
     [SerializeField]ParticleSystem blood;
+    [SerializeField]AudioMixer mixer;
 
     void Update() {
         if(healthUI != null) {
@@ -40,6 +42,7 @@ public class Health : MonoBehaviour
         (GameObject.FindWithTag("Player").GetComponent("BulletTime") as MonoBehaviour).enabled = false;
         if(Input.GetKeyDown(KeyCode.R)) {
             Time.timeScale = 1f;
+            mixer.SetFloat("pitch", 1f);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }

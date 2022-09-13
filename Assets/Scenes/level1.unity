@@ -8594,6 +8594,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1625176630}
     - target: {fileID: 1275976901, guid: 936737125ef824741a8973803d150eee, type: 3}
+      propertyPath: mixer
+      value: 
+      objectReference: {fileID: 24100000, guid: fc9456527ad4a664db7c7520f6cd469d, type: 2}
+    - target: {fileID: 1275976901, guid: 936737125ef824741a8973803d150eee, type: 3}
       propertyPath: deathUI
       value: 
       objectReference: {fileID: 917387446855388794}

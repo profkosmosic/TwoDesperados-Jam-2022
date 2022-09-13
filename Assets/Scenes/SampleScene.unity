@@ -420,6 +420,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5595fd4e58f8efa4184881891323641e, type: 3}
+--- !u!1 &917387446855388794 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060052280179565262, guid: 5595fd4e58f8efa4184881891323641e, type: 3}
+  m_PrefabInstance: {fileID: 917387446855388793}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &917387446855388795 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 917387447076028708, guid: 5595fd4e58f8efa4184881891323641e, type: 3}
+  m_PrefabInstance: {fileID: 917387446855388793}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1415091658923712982
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -497,9 +507,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1846811693}
     - target: {fileID: 1275976901, guid: 936737125ef824741a8973803d150eee, type: 3}
+      propertyPath: gun
+      value: 
+      objectReference: {fileID: 1799479719144895014}
+    - target: {fileID: 1275976901, guid: 936737125ef824741a8973803d150eee, type: 3}
+      propertyPath: mixer
+      value: 
+      objectReference: {fileID: 24100000, guid: fc9456527ad4a664db7c7520f6cd469d, type: 2}
+    - target: {fileID: 1275976901, guid: 936737125ef824741a8973803d150eee, type: 3}
+      propertyPath: deathUI
+      value: 
+      objectReference: {fileID: 917387446855388794}
+    - target: {fileID: 1275976901, guid: 936737125ef824741a8973803d150eee, type: 3}
+      propertyPath: shooter
+      value: 
+      objectReference: {fileID: 1799479719144895013}
+    - target: {fileID: 1275976901, guid: 936737125ef824741a8973803d150eee, type: 3}
       propertyPath: healthUI
       value: 
       objectReference: {fileID: 1519097589}
+    - target: {fileID: 1275976901, guid: 936737125ef824741a8973803d150eee, type: 3}
+      propertyPath: crosshair
+      value: 
+      objectReference: {fileID: 917387446855388795}
     - target: {fileID: 1799479719715525210, guid: 936737125ef824741a8973803d150eee, type: 3}
       propertyPath: m_Name
       value: Player
@@ -548,8 +578,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1799479720103878481, guid: 936737125ef824741a8973803d150eee, type: 3}
+      propertyPath: Sensitivity
+      value: 150
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 936737125ef824741a8973803d150eee, type: 3}
+--- !u!1 &1799479719144895013 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 340095878, guid: 936737125ef824741a8973803d150eee, type: 3}
+  m_PrefabInstance: {fileID: 1799479719144895012}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1799479719144895014 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8525057417001751477, guid: 936737125ef824741a8973803d150eee, type: 3}
+  m_PrefabInstance: {fileID: 1799479719144895012}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3727530281825557374
 PrefabInstance:
   m_ObjectHideFlags: 0

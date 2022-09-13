@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class MainMenu : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField]GameObject backToMenuButton;
     [SerializeField]GameObject fadeOut;
     [SerializeField]GameObject loading;
+    [SerializeField]AudioMixer mixer;
 
     public void PlayGame() {
         StartCoroutine(StartLevel());
@@ -41,6 +43,7 @@ public class MainMenu : MonoBehaviour
         if(MusicPlay.Music.gameObject != null) {
             MusicPlay.Music.gameObject.GetComponent<AudioSource>().Play();
         }
+        mixer.SetFloat("pitch", 1f);
         fadeOut.SetActive(true);
         yield return new WaitForSeconds(1f);
         loading.SetActive(true);
